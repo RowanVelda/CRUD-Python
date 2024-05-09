@@ -5,6 +5,7 @@ from models import usuario
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:1234@localhost:3306/financeiro'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+#host: 127.0.0.1:3306
 
 db = SQLAlchemy(app)
 
